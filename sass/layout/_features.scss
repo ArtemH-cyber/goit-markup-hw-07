@@ -16,12 +16,12 @@
   color: var(--text-color);
 }
 
-.features-menu-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features-menu-item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-icon {

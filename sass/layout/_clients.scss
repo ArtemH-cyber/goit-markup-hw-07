@@ -31,21 +31,21 @@
   cursor: pointer;
   transition: border var(--transition-duration)
     var(--transition-timing-function);
-}
 
-.client-list-link:hover,
-.client-list-link:focus {
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .client-list-icon {
   fill: #afb1b8;
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-  fill: var(--accent-color);
+  .client-list-link:hover &,
+  .client-list-link:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .client-one {

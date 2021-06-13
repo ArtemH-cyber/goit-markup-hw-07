@@ -8,11 +8,11 @@
   border-radius: 50%;
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .social-list-icon {
@@ -20,9 +20,9 @@
   height: 20px;
   fill: rgba(175, 177, 184, 1);
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--white-color);
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--white-color);
+  }
 }

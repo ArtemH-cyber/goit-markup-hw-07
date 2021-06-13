@@ -4,11 +4,11 @@
   height: 18px;
   fill: var(--black-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal-close-btn:hover .modal-svg-btn,
-.modal-close-btn:focus .modal-svg-btn {
-  fill: #2196f3;
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: #2196f3;
+  }
 }
 
 .form-modal-input-wrapper {
@@ -75,11 +75,11 @@
   height: 18px;
   fill: var(--black-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.form-input:hover + .modal-svg-btn-icon,
-.form-input:focus + .modal-svg-btn-icon {
-  fill: var(--accent-color);
+  .form-input:hover + &,
+  .form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .form-field textarea {
@@ -182,10 +182,10 @@
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal-form-button:hover,
-.modal-form-button:focus {
-  background-color: #188ce8;
-  color: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--white-color);
+  }
 }

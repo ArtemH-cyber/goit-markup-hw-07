@@ -28,12 +28,12 @@
       var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function);
   cursor: pointer;
-}
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
-  color: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--white-color);
+  }
 }
 
 .hero {
