@@ -113,6 +113,11 @@
   color: #757575;
 }
 
+.checkbox-input {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .checkbox-input label {
   font-style: normal;
   font-weight: normal;
@@ -121,35 +126,32 @@
   color: #757575;
 }
 
-.checkbox-input {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.checkbox-modal-form-pollicy::before {
-  display: inline-block;
-  /* выравниваем в строчку */
-  vertical-align: middle;
-  margin-right: 8px;
-  content: "";
-  width: 16px;
-  height: 15px;
-  cursor: pointer;
-  background-image: url("../images/none_check.svg");
-}
-
-.checkbox-modal-form:checked + .checkbox-modal-form-pollicy::before {
-  background-image: url("../images/check.svg");
-}
-
-.checkbox-modal-form:focus + .checkbox-modal-form-pollicy::before {
-  outline: 2px solid blue;
-}
-
 /* задаем размер checkbox  */
 .checkbox-input input[type="checkbox"] {
   width: 16px;
   height: 15px;
+}
+
+.checkbox-modal-form-pollicy {
+  &::before {
+    display: inline-block;
+    /* выравниваем в строчку */
+    vertical-align: middle;
+    margin-right: 8px;
+    content: "";
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url("../images/none_check.svg");
+  }
+
+  .checkbox-modal-form:checked + &::before {
+    background-image: url("../images/check.svg");
+  }
+
+  .checkbox-modal-form:focus + &::before {
+    outline: 2px solid blue;
+  }
 }
 
 /* валидность даных в форме цвет */
