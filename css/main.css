@@ -317,7 +317,7 @@ textarea {
   display: inline-block;
   /* выравниваем в строчку */
   vertical-align: middle;
-  margin-right: 0px 8px;
+  margin: 0px 8px;
   content: "";
   width: 16px;
   height: 15px;
@@ -375,6 +375,7 @@ textarea {
 
 .logo-link_black {
   color: var(--black-color);
+  margin-right: 93px;
 }
 
 .header-menu-link {
